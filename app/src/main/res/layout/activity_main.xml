@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add ToDo Item ..."
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="50dp"
+            />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice"
+        />
+
+</RelativeLayout>
